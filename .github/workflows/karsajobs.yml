@@ -1,16 +1,16 @@
-name: Super-Linter
+name: karsajobs
 
 on: push
 
 jobs:
-  super-lint:
-    name: Lint code base
+  backend:
+    name: backend code base
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout backend
         uses: actions/checkout@v2
 
-      - name: Run Super-Linter
+      - name: Run karsajobs
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
